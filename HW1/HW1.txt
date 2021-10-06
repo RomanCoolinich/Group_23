@@ -1,0 +1,74 @@
+1 Посмотреть где я                        - pwd 
+2 Создать папку                           - mkdir test1
+3 Зайти в папку                           - cd test1
+4 Создать 3 папки                         -  mkdir test1.1 test1.2 test1.3
+5 Зайти в любую папку                     - cd test1.1
+6 Создать 5 файлов (3 txt, 2 json)        -  touch 1.txt 2.txt 3.txt 4.json 5.json
+7 Создать 3 папки                         - mkdir test1.1.1 test1.1.2 test1.1.3
+8 Вывести список содержимого папки        - ls
+9 Открыть любой txt файл                  - nano 1.txt
+10 написать туда что-нибудь, любой текст. - Imagine there's no heaven
+					    It's easy if you try
+					    No hell below us
+					    Above us, only sky
+					    Imagine all the people
+					    Livin' for today
+					    Imagine there's no countries
+					    It isn't hard to do
+					    Nothing to kill or die for
+					    And no religion, too
+					    Imagine all the people
+					    Livin' life in peace
+					    You may say I'm a dreamer
+					    But I'm not the only one
+					    I hope someday you'll join us
+					    And the world will be as one
+					    Imagine no possessions
+					    I wonder if you can
+					    No need for greed or hunger
+					    A brotherhood of man
+					    Imagine all the people
+					    Sharing all the world
+					    You may say I'm a dreamer
+					    But I'm not the only one
+					    I hope someday you'll join us
+					    And the world will live as one
+
+11 + сохранить и выйти.                   - Ctrl+x, Y, Enter
+12 Выйти из папки на уровень выше         - cd ..
+13 переместить любые 2 файла, которые вы 
+создали, в любую другую папку             - mv test1.1/1.txt test1.1/2.txt test1.2/
+14 скопировать любые 2 файла, которые вы 
+создали, в любую другую папку             - cp test1.1/4.json test1.1/5.json test1.3/
+15 Найти файл по имени                    - find . -name 1.txt
+16просмотреть содержимое в реальном 
+времени (команда grep) изучите как 
+она работает.                             - tail -f test1.2/1.txt
+17 вывести несколько первых строк 
+из текстового файла                       - head -4 test1.2/1.txt
+18 вывести несколько последних строк из 
+текстового файла                          - tail -4 test1.2/1.txt
+19 просмотреть содержимое длинного файла 
+(команда less) изучите как она работает.  - less test1.2/1.txt
+20 вывести дату и время                   - date
+
+Задание *
+1 Отправить http запрос на сервер. http://162.55.220.72:5005/terminal-hw-request - Curl http://162.55.220.72:5005/terminal-hw-request
+
+2 Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+#!/bin/bash
+echo "Script has been started"
+mkdir test1
+cd test1
+mkdir test1.1 test1.2 test1.3
+cd test1.1
+touch 1.txt 2.txt 3.txt 4.json 5.json
+mkdir test1.1.1 test1.1.2 test1.1.3
+ls
+cd ..
+mv test1.1/1.txt test1.1/2.txt test1.2/
+echo "Script has been finished"
+
+
+
