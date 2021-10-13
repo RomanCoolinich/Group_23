@@ -1,0 +1,676 @@
+{
+	"info": {
+		"_postman_id": "15400e48-27ad-4f33-bac6-332f406d8717",
+		"name": "Postman HW#1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EP_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "162.55.220.72:5005/get_method?name=Roman&age=29",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Roman"
+						},
+						{
+							"key": "age",
+							"value": "29"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP_1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "162.55.220.72:5005/get_method?name=Roman&age=29",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"get_method"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Roman"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Oct 2021 06:31:24 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"Roman\",\n    \"29\"\n]"
+				}
+			]
+		},
+		{
+			"name": "EP_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Roman",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "29",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "400",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "162.55.220.72:5005/user_info_3",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP_2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Roman",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "29",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "400",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "162.55.220.72:5005/user_info_3",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"user_info_3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "114"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Oct 2021 06:32:30 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": \"29\",\n    \"family\": {\n        \"children\": [\n            [\n                \"Alex\",\n                24\n            ],\n            [\n                \"Kate\",\n                12\n            ]\n        ],\n        \"u_salary_1_5_year\": 1600\n    },\n    \"name\": \"Roman\",\n    \"salary\": 400\n}"
+				}
+			]
+		},
+		{
+			"name": "EP_3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "162.55.220.72:5005/object_info_1?name=Roman&age=29&weight=92",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Roman"
+						},
+						{
+							"key": "age",
+							"value": "29"
+						},
+						{
+							"key": "weight",
+							"value": "92"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP_3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "162.55.220.72:5005/object_info_1?name=Roman&age=29&weight=92",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Roman"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								},
+								{
+									"key": "weight",
+									"value": "92"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "65"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Oct 2021 06:32:37 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": 29,\n    \"daily_food\": 1.104,\n    \"daily_sleep\": 230,\n    \"name\": \"Roman\"\n}"
+				}
+			]
+		},
+		{
+			"name": "EP_4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "162.55.220.72:5005/object_info_2?name=Roman&age=29&salary=400",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Roman"
+						},
+						{
+							"key": "age",
+							"value": "29"
+						},
+						{
+							"key": "salary",
+							"value": "400"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP_4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "162.55.220.72:5005/object_info_2?name=Roman&age=29&salary=400",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Roman"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								},
+								{
+									"key": "salary",
+									"value": "400"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "233"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Oct 2021 06:32:42 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"person\": {\n        \"u_age\": 29,\n        \"u_name\": [\n            \"Roman\",\n            400,\n            29\n        ],\n        \"u_salary_5_years\": 1680\n    },\n    \"qa_salary_after_1.5_year\": 1320,\n    \"qa_salary_after_12_months\": 1080,\n    \"qa_salary_after_3.5_years\": 1520,\n    \"qa_salary_after_6_months\": 800,\n    \"start_qa_salary\": 400\n}"
+				}
+			]
+		},
+		{
+			"name": "EP_5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "162.55.220.72:5005/object_info_3?name=Roman&age=29&salary=400",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Roman"
+						},
+						{
+							"key": "age",
+							"value": "29"
+						},
+						{
+							"key": "salary",
+							"value": "400"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP_5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "162.55.220.72:5005/object_info_3?name=Roman&age=29&salary=400",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Roman"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								},
+								{
+									"key": "salary",
+									"value": "400"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "184"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Oct 2021 06:32:46 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": \"29\",\n    \"family\": {\n        \"children\": [\n            [\n                \"Alex\",\n                24\n            ],\n            [\n                \"Kate\",\n                12\n            ]\n        ],\n        \"pets\": {\n            \"cat\": {\n                \"age\": 3,\n                \"name\": \"Sunny\"\n            },\n            \"dog\": {\n                \"age\": 4,\n                \"name\": \"Luky\"\n            }\n        },\n        \"u_salary_1_5_year\": 1600\n    },\n    \"name\": \"Roman\",\n    \"salary\": 400\n}"
+				}
+			]
+		},
+		{
+			"name": "EP_6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "162.55.220.72:5005/object_info_4?name=Roman&age=29&salary=400",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Roman"
+						},
+						{
+							"key": "age",
+							"value": "29"
+						},
+						{
+							"key": "salary",
+							"value": "400"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP_6",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "162.55.220.72:5005/object_info_4?name=Roman&age=29&salary=400",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_4"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Roman"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								},
+								{
+									"key": "salary",
+									"value": "400"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Oct 2021 06:32:51 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": 29,\n    \"name\": \"Roman\",\n    \"salary\": [\n        400,\n        \"800\",\n        \"1200\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "EP_7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Roman",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "29",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "400",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "162.55.220.72:5005/user_info_2",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP_7",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Roman",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "29",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "400",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "162.55.220.72:5005/user_info_2",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"user_info_2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "233"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Oct 2021 06:32:56 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"person\": {\n        \"u_age\": 29,\n        \"u_name\": [\n            \"Roman\",\n            400,\n            29\n        ],\n        \"u_salary_5_years\": 1680\n    },\n    \"qa_salary_after_1.5_year\": 1320,\n    \"qa_salary_after_12_months\": 1080,\n    \"qa_salary_after_3.5_years\": 1520,\n    \"qa_salary_after_6_months\": 800,\n    \"start_qa_salary\": 400\n}"
+				}
+			]
+		}
+	]
+}
