@@ -1,0 +1,42 @@
+1. На локальном репозитории сделать ветки для:
+- Postman                                                                       - git branch Postman                                                                       
+- Jmeter                                                                        - git branch Jmeter                                                                        
+- CheckLists                                                                    - git branch CheckLists                                                                    
+- Bag Reports                                                                   - git branch Bag_Reports 
+- SQL                                                                           - git branch SQL                                                                           
+- Charles                                                                       - git branch Charles                                                                       
+- Mobile testing                                                                - git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий                                    - git push origin --all
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта     - git checkout Bag_Reports
+                                                                                - nano bagreport.txt
+                                                                                id:
+                                                                                Summary:
+                                                                                Severity:
+                                                                                Priority:
+                                                                                Steps to reproduce:
+                                                                                Actual result:
+                                                                                Expected result:
+                                                                                Attachment:
+                                                                                Environment:
+                                                                                ctrl+x,Y,Enter
+
+4. Запушить структуру багрепорта на внешний репозиторий                         - git add .
+                                                                                - git commit -m 'bagreport.txt was added'
+                                                                                - git push -u origin Bag_Reports  
+5. Вмержить ветку Bag Reports в Main                                            - git checkout Main                                            
+                                                                                - git merge Bag_Reports
+6. Запушить main на внешний репозиторий.                                        - git push origin Main  
+7. В ветке CheckLists набросать структуру чек листа.                            - git checkout CheckLists
+                                                                                - nano сheckList.txt
+                                                                                id:
+                                                                                Check Header:
+                                                                                Pass/Fail:
+                                                                                ctrl+x,Y,Enter
+                                                   
+8. Запушить структуру на внешний репозиторий                                    - git add .
+                                                                                - git commit -m 'сheckList.txt was added'
+                                                                                - git push origin CheckLists
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main          - нажать "compare & pull request" для ветки CheckLists, затем "create pull request", 
+                                                                                 затем "Merge pull request" и "Confirm merge"
+10. Синхронизировать Внешнюю и Локальную ветки Main                             - git pull
