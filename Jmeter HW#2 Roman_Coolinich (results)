@@ -1,6 +1,0 @@
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1640336081061,95,Log in,200,OK,Log in 1-1,text,true,,214,242,1,1,http://162.55.220.72:5005/login,92,0,48
-1640336081207,90,#1 user_info,200,OK,Log in 1-1,text,true,,310,328,1,1,http://162.55.220.72:5005/user_info,90,0,44
-1640336081299,80,new_data,200,OK,Log in 1-1,text,true,,201,320,1,1,http://162.55.220.72:5005/new_data,80,0,39
-1640336081380,77,test_pet_info,200,OK,Log in 1-1,text,true,,210,325,1,1,http://162.55.220.72:5005/test_pet_info,77,0,38
-1640336081463,81,get_test_user,200,OK,Log in 1-1,text,true,,261,325,1,1,http://162.55.220.72:5005/get_test_user,81,0,39
